@@ -58,6 +58,8 @@ module.exports = ({ dev }) => ({
   plugins: [
     new HtmlWebpackPlugin({
       title: !dev ? 'Shape App' : 'Development',
+      // template: path.resolve(__dirname, './src/template.html'), // шаблон
+      // filename: 'index.html',
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[fullhash].css',
