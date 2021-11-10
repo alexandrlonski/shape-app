@@ -9,74 +9,74 @@
     height: 100%;
     width: 160px;
     padding-top: 20px;
-    background-color: rgb(48, 48, 48);
+    background-color: #303030;
     overflow-x: hidden;
     z-index: 1;
   }
 .container {
-    position: relative;
-    display: block;
-    margin: 10px 0;
-    transition: all .3s;
-    cursor: pointer;
-    &:not(.triangle, .dotted-line) {
-      background: #ffffff;
+  position: relative;
+  display: block;
+  margin: 10px 0;
+  transition: all .3s;
+  cursor: pointer;
+  &:not(.triangle, .dotted-line) {
+    background: #ffffff;
+  }
+  &:hover:not(.triangle, .dotted-line) {
+    background: #f3a25c;
+  }
+  &.rectangle {
+    width: 80px;
+    height: 40px;
+  }
+  &.square {
+    width: 50px;
+    height: 50px;
+  }
+  &.triangle {
+    width: 0px;
+    height: 0px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #ffffff;
+    &:hover {
+      border-bottom-color: #f3a25c;
     }
-    &:hover:not(.triangle, .dotted-line) {
-      background: peachpuff;
-    }
-    &.rectangle {
-      width: 80px;
-      height: 40px;
-    }
-    &.square {
-      width: 50px;
-      height: 50px;
-    }
-    &.triangle {
-      width: 0px;
-      height: 0px;
-      border-left: 25px solid transparent;
-      border-right: 25px solid transparent;
-      border-bottom: 50px solid #ffffff;
-      &:hover {
-        border-bottom-color: peachpuff;
-      }
-      &.active {
-        border-bottom-color: peachpuff;
-      }
-    }
-    &.circle {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%
-    }
-    &.active:not(.triangle, .dotted-line) {
-      background: peachpuff;
-    }
-    & input {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      opacity: 0;
-      visibility: hidden;
-    }
-    &.straight-line{
-      width: 80px;
-      height: 3px;
-      margin-top: 25px;
-  
-    }
-    &.dotted-line{
-      width: 80px;
-      margin-top: 25px;
-      border-bottom: 3px dotted #ffffff;
-      &:hover {
-        border-bottom-color: peachpuff;
-      }
-  
-      &.active {
-        border-bottom-color: peachpuff;
-      }
+    &.active {
+      border-bottom-color: #f3a25c;
     }
   }
+  &.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%
+  }
+  &.active:not(.triangle, .dotted-line) {
+    background: #f3a25c;
+  }
+  & input {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  &.straight-line{
+    width: 80px;
+    height: 3px;
+    margin-top: 25px;
+
+  }
+  &.dotted-line{
+    width: 80px;
+    margin-top: 25px;
+    border-bottom: 3px dotted #ffffff;
+    &:hover {
+      border-bottom-color: #f3a25c;
+    }
+
+    &.active {
+      border-bottom-color: #f3a25c;
+    }
+  }
+}
