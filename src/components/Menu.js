@@ -1,5 +1,5 @@
 import BaseElement from './UI/BaseElement';
-import stateFigure from '../data/stateFigure';
+import figureState from '../data/figureState';
 
 export default class Menu extends BaseElement {
   constructor(button) {
@@ -33,7 +33,7 @@ export default class Menu extends BaseElement {
           if (e.target === child) {
             child.classList.add(className);
 
-            stateFigure.figure = [child.classList[1]];
+            figureState.figure = [child.classList[1]];
           } else {
             child.classList.remove(className);
           }

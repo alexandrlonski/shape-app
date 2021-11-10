@@ -4,7 +4,5 @@ import './style.scss';
 
 window.onload = () => {
   const { body } = document;
-  const init = new App(body);
-
-  return init;
+  new App(body);
 };
