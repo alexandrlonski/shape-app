@@ -5,21 +5,21 @@ export default class Menu extends BaseElement {
   constructor(button) {
     super('header', ['header']);
 
-    this.Rect = new BaseElement('div', ['container', 'rectangle']);
-    this.Square = new BaseElement('div', ['container', 'square']);
-    this.Triangle = new BaseElement('div', ['container', 'triangle']);
-    this.Circle = new BaseElement('div', ['container', 'circle']);
-    this.StraightLine = new BaseElement('div', ['container', 'straight-line']);
-    this.DottedLine = new BaseElement('div', ['container', 'dotted-line']);
+    this.rect = new BaseElement('div', ['container', 'rectangle']);
+    this.square = new BaseElement('div', ['container', 'square']);
+    this.triangle = new BaseElement('div', ['container', 'triangle']);
+    this.circle = new BaseElement('div', ['container', 'circle']);
+    this.straightLine = new BaseElement('div', ['container', 'straight-line']);
+    this.dottedLine = new BaseElement('div', ['container', 'dotted-line']);
     this.button = button;
 
     this.element.append(
-      this.Rect.element,
-      this.Square.element,
-      this.Triangle.element,
-      this.Circle.element,
-      this.StraightLine.element,
-      this.DottedLine.element,
+      this.rect.element,
+      this.square.element,
+      this.triangle.element,
+      this.circle.element,
+      this.straightLine.element,
+      this.dottedLine.element,
       this.button.element
     );
   }
