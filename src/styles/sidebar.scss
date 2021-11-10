@@ -1,4 +1,4 @@
-.header {
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -53,13 +53,6 @@
   }
   &.active:not(.triangle, .dotted-line) {
     background: #f3a25c;
-  }
-  & input {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    visibility: hidden;
   }
   &.straight-line{
     width: 80px;

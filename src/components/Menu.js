@@ -3,7 +3,7 @@ import figureState from '../data/figureState';
 
 export default class Menu extends BaseElement {
   constructor(button) {
-    super('header', ['header']);
+    super('div', ['sidebar']);
 
     this.rect = new BaseElement('div', ['container', 'rectangle']);
     this.square = new BaseElement('div', ['container', 'square']);
