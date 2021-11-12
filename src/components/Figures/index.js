@@ -4,6 +4,4 @@ import Square from './allFigures/Square';
 import Rectangle from './allFigures/Rectangle';
 import Triangle from './allFigures/Triangle';
 
-export {
- Circle, Figure, Square, Rectangle, Triangle 
-};
+export { Circle, Figure, Square, Rectangle, Triangle };

@@ -1,5 +1,3 @@
-const figureState = {
-  figure: [],
-};
+const figureState = { figure: [] };
 
 export default figureState;

@@ -21,7 +21,8 @@
         "exports": "never",
         "functions": "never"
       }
-    ]
+    ],
+    "object-curly-newline": ["error", {"multiline": true}]
   },
   "ignorePatterns": ["*config.js"]
 }

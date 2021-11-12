@@ -3,7 +3,11 @@ import { rectangleOptions } from '../../../data/figuresOptions';
 
 export default class Rectangle extends Figure {
   constructor() {
-    super(rectangleOptions.name, rectangleOptions.width, rectangleOptions.height);
+    super(
+      rectangleOptions.name,
+      rectangleOptions.width,
+      rectangleOptions.height
+    );
 
     this.element.style.width = `${this.x}px`;
     this.element.style.height = `${this.y}px`;

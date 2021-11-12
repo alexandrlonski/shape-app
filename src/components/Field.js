@@ -1,12 +1,20 @@
-import figureState  from '../data/figureState';
-import { Circle, Rectangle, Square, Triangle } from './Figures';
 import BaseElement from './UI/BaseElement';
+import figureState from '../data/figureState';
+import { Circle, Rectangle, Square, Triangle } from './Figures';
+import { DottedLine, StraightLine } from './Lines';
 
 export default class Field extends BaseElement {
   constructor() {
     super('div', ['field']);
 
-    this.figures = [Circle, Rectangle, Square, Triangle];
+    this.figures = [
+      Circle,
+      Rectangle,
+      Square,
+      Triangle,
+      DottedLine,
+      StraightLine,
+    ];
   }
 
   onClick() {

@@ -1,5 +1,5 @@
 import BaseElement from './UI/BaseElement';
-import figureState  from '../data/figureState';
+import figureState from '../data/figureState';
 
 export default class Menu extends BaseElement {
   constructor(button) {
