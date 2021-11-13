@@ -17,7 +17,7 @@ export default class App {
 
   initListener() {
     this.menu.onClick('active');
-    this.field.onClick(this.menu.element);
+    this.field.onClick();
     this.remove.onClick(this.field.element);
   }
 }
