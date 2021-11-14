@@ -2,7 +2,6 @@ import Line from '../Line';
 import {
   dottedLineOptions,
   commonLineOptions,
-  computeLinePosition,
 } from '../../../data/lineOptions';
 import { figureState } from '../../../data/figureState';
 
@@ -13,7 +12,7 @@ export default class DottedLine extends Line {
       commonLineOptions.width,
       dottedLineOptions.borderBottom
     );
-    computeLinePosition();
+
     this.element.style.width = `${this.x}px`;
     this.element.style.borderBottom = `${this.y}px ${dottedLineOptions.style} ${dottedLineOptions.color}`;
   }

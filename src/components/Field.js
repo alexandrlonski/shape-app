@@ -6,6 +6,7 @@ import {
 } from '../data/figureState';
 import { Circle, Rectangle, Square, Triangle } from './Figures';
 import { DottedLine, StraightLine } from './Lines';
+import { computeLinePosition } from '../data/lineOptions';
 
 export default class Field extends BaseElement {
   constructor() {
@@ -48,6 +49,7 @@ export default class Field extends BaseElement {
 
       this.lines.forEach((Line) => {
         if (new Line().figureName !== figureState.figure[0]) return;
+        computeLinePosition();
         new Line().createFigure(e, this.element);
       });
       figureState.positionFrom = [];
